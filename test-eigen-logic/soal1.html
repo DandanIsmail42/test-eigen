@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal no 1</title>
+</head>
+
+<body>
+
+    <script>
+
+        const balikanKata = (str, num) => {
+            const strSplit = str.split('')
+            const strRev = strSplit.reverse()
+            const strJoin = strRev.join('')
+            const arr = []
+            arr.push(strJoin + num)
+            return arr
+        }
+        console.log(balikanKata('negie', 1))
+        console.log(balikanKata('irt', 1))
+        console.log(balikanKata('amehtam', 1))
+        console.log(balikanKata('Frontend', 1))
+
+    </script>
+</body>
+
+</html>

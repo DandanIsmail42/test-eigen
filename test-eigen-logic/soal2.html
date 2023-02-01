@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal no 2</title>
+</head>
+
+<body>
+
+
+    <script>
+        var cariKataTerpanjang = (kalimat) => {
+            var kata = kalimat.split(' ')
+            var longest = ''
+
+            for (var k of kata) {
+                if (k.length > longest.length) longest = k
+            }
+            return `kata terpanjang dari kalimat (${kalimat}) adalah : (${longest})`
+        }
+        console.log(cariKataTerpanjang('Saya sangat senang mengerjakan soal algoritma'))
+        console.log(cariKataTerpanjang('Saya seorang fresh graduate'))
+        console.log(cariKataTerpanjang('Saya seorang junior frontend developer'))
+        console.log(cariKataTerpanjang('Saya sedang mengerjakan test algoritma'))
+        console.log(cariKataTerpanjang('Sukabumi adalah kota kelahiran saya'))
+        console.log(cariKataTerpanjang('PT. EIGEN TRI MATHEMA'))
+        console.log(cariKataTerpanjang('Bandung Jawa Barat'))
+        console.log(cariKataTerpanjang('Web Developer mern stack'))
+        console.log(cariKataTerpanjang('Menabung pangkal kaya'))
+        console.log(cariKataTerpanjang('Jangan membuang sampah sembarangan'))
+    </script>
+</body>
+
+</html>
